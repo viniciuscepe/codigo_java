@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js03_if.htm - if</title>
+
+<meta http-equiv="Content-Type" content="text/html; " >
+<meta charset="utf-8">
+
+</head>
+<body>
+<script type="text/javascript">
+
+var js_n1;
+var js_n2;
+var js_n3;
+
+js_n1= parseInt(window.prompt('Informe o valor do primeiro número:	' , '00'));
+js_n2= parseInt(window.prompt('Informe o valor do segundo número:	' , '00'));
+
+document.write('Número 1 digitando = ' + js_n1);
+document.write('<br>Número 2 digitando = ' + js_n2);
+
+	if(js_n1 > js_n2){
+		js_n3 = js_n1;
+		js_n1 = js_n2;
+		js_n2 = js_n3;
+	}
+
+document.write('<p><b>Classificação em Ordem Crescente:</b> ' +js_n1 + 'e' + js_n2);
+
+</script>
+</body>
+</html>
